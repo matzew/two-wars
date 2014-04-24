@@ -30,7 +30,22 @@
       <dependency>
           <groupId>org.keycloak</groupId>
           <artifactId>keycloak-as7-adapter</artifactId>
-          <version>1.0-beta-1-SNAPSHOT</version>
+          <version>${keycloak.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.keycloak</groupId>
+          <artifactId>keycloak-model-api</artifactId>
+          <version>${keycloak.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.keycloak</groupId>
+          <artifactId>keycloak-model-jpa</artifactId>
+          <version>${keycloak.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.keycloak</groupId>
+          <artifactId>keycloak-services</artifactId>
+          <version>${keycloak.version}</version>
       </dependency>
 
       <!-- REST EASY TWEAKS -->
@@ -54,4 +69,10 @@
    <build>
         <finalName>${project.artifactId}</finalName>
    </build>
+   
+   <properties>
+       <keycloak.version>1.0-beta-1-SNAPSHOT</keycloak.version>
+   </properties>
+   
+   
 </project>
